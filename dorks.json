@@ -1,0 +1,116 @@
+[
+  { "Label": "Exact phrase", "Pattern": "\"{q}\"" },
+  { "Label": "Any keyword", "Pattern": "{q}" },
+  { "Label": "All in text", "Pattern": "allintext:\"{q}\"" },
+  { "Label": "Page title contains", "Pattern": "intitle:\"{q}\"" },
+  { "Label": "All in title", "Pattern": "allintitle:\"{q}\"" },
+  { "Label": "URL contains", "Pattern": "inurl:{q}" },
+  { "Label": "Exact in URL (quoted)", "Pattern": "inurl:\"{q}\"" },
+  { "Label": "Index of directory", "Pattern": "intitle:\"index of\" \"{q}\"" },
+
+  { "Label": "PDF files", "Pattern": "filetype:pdf \"{q}\"" },
+  { "Label": "DOC/DOCX files", "Pattern": "filetype:doc OR filetype:docx \"{q}\"" },
+  { "Label": "XLS/XLSX files", "Pattern": "filetype:xls OR filetype:xlsx \"{q}\"" },
+  { "Label": "PPT/PPTX files", "Pattern": "filetype:ppt OR filetype:pptx \"{q}\"" },
+  { "Label": "Text / CSV files", "Pattern": "filetype:txt OR filetype:csv \"{q}\"" },
+  { "Label": "ZIP / RAR archives", "Pattern": "filetype:zip OR filetype:rar \"{q}\"" },
+  { "Label": "SQL dumps", "Pattern": "filetype:sql \"{q}\"" },
+  { "Label": "Log files", "Pattern": "filetype:log \"{q}\"" },
+
+  { "Label": "Firmware (zip/rar)", "Pattern": "filetype:zip OR filetype:rar \"{q}\" firmware" },
+  { "Label": "Stock ROMs", "Pattern": "\"{q}\" ROM OR \"Stock ROM\" filetype:zip" },
+  { "Label": "Flash tools", "Pattern": "\"flash tool\" \"{q}\" download" },
+  { "Label": "Driver files", "Pattern": "filetype:exe OR filetype:inf \"{q}\" driver" },
+  { "Label": "Service manuals", "Pattern": "filetype:pdf \"{q}\" \"service manual\"" },
+  { "Label": "Datasheets", "Pattern": "filetype:pdf \"{q}\" datasheet" },
+  { "Label": "Schematics / diagrams", "Pattern": "filetype:pdf OR filetype:jpg \"{q}\" schematic OR diagram" },
+  { "Label": "Boardview images", "Pattern": "filetype:jpg OR filetype:png \"{q}\" boardview OR \"board view\"" },
+
+  { "Label": "YouTube tutorials", "Pattern": "site:youtube.com \"{model}\" repair OR tutorial OR \"{error}\"" },
+  { "Label": "XDA forums", "Pattern": "site:forum.xda-developers.com \"{q}\"" },
+  { "Label": "GSMHosting", "Pattern": "site:gsmhosting.com \"{q}\"" },
+  { "Label": "Reddit threads", "Pattern": "site:reddit.com \"{q}\"" },
+  { "Label": "StackOverflow questions", "Pattern": "site:stackoverflow.com/questions \"{q}\"" },
+  { "Label": "Tech forum guides", "Pattern": "site:instructables.com OR site:medium.com \"{q}\" guide" },
+  { "Label": "GitHub repos", "Pattern": "site:github.com \"{q}\"" },
+  { "Label": "GitLab projects", "Pattern": "site:gitlab.com \"{q}\"" },
+
+  { "Label": "Gists (GitHub)", "Pattern": "site:gist.github.com \"{q}\"" },
+  { "Label": "Pastebin posts", "Pattern": "site:pastebin.com \"{q}\"" },
+  { "Label": "Drive shared files", "Pattern": "site:drive.google.com \"{q}\"" },
+  { "Label": "Mega.nz files", "Pattern": "site:mega.nz \"{q}\"" },
+  { "Label": "MediaFire uploads", "Pattern": "site:mediafire.com \"{q}\"" },
+  { "Label": "Dropbox links", "Pattern": "site:dropbox.com \"{q}\"" },
+
+  { "Label": "In text (plain)", "Pattern": "intext:{q}" },
+  { "Label": "In anchor text", "Pattern": "inanchor:\"{q}\"" },
+  { "Label": "All in anchor", "Pattern": "allinanchor:\"{q}\"" },
+  { "Label": "Proximity search", "Pattern": "\"{q}\" AROUND(5) \"{q2}\"" },
+  { "Label": "Exclude term", "Pattern": "{q} -example" },
+  { "Label": "Combine OR", "Pattern": "(\"{q}\" OR \"alt1\" OR \"alt2\")" },
+  { "Label": "Combine AND", "Pattern": "\"{q}\" AND \"{q2}\"" },
+
+  { "Label": "Exposed config files", "Pattern": "ext:cfg OR ext:conf OR ext:ini \"{q}\"" },
+  { "Label": "Exposed backup files", "Pattern": "ext:bak OR ext:old OR ext:backup \"{q}\"" },
+  { "Label": "Exposed SQL dumps", "Pattern": "ext:sql OR ext:db \"{q}\"" },
+  { "Label": "Passwords in files", "Pattern": "\"password\" filetype:txt OR filetype:log \"{q}\"" },
+  { "Label": "Exposed admin panels", "Pattern": "intitle:\"Admin Login\" OR inurl:admin \"{q}\"" },
+  { "Label": "Login pages", "Pattern": "inurl:login OR inurl:signin \"{q}\"" },
+
+  { "Label": "Index private directories", "Pattern": "intitle:\"index of\" \"{q}\" private OR backup" },
+  { "Label": "Open S3 buckets (via listings)", "Pattern": "site:s3.amazonaws.com \"{q}\"" },
+  { "Label": "Exposed .env files", "Pattern": "filetype:env \"{q}\"" },
+  { "Label": "Kubernetes configs", "Pattern": "\"kubeconfig\" filetype:yaml OR filetype:yml \"{q}\"" },
+  { "Label": "Dockerfiles", "Pattern": "file:Dockerfile \"{q}\" OR intext:FROM" },
+
+  { "Label": "Router / IoT default pages", "Pattern": "inurl:setup.cgi OR inurl:admin \"{q}\"" },
+  { "Label": "Camera web interfaces", "Pattern": "inurl:view.shtml OR inurl:axis-cgi \"{q}\"" },
+  { "Label": "Printer panels", "Pattern": "inurl:/hp/device/this.LCDispatcher \"{q}\"" },
+  { "Label": "SCADA / HMI panels", "Pattern": "intitle:SCADA OR intitle:HMI \"{q}\"" },
+
+  { "Label": "Open Elasticsearch", "Pattern": "inurl:_plugin OR inurl:_search \"{q}\"" },
+  { "Label": "Open Kibana dashboards", "Pattern": "inurl:kibana \"{q}\"" },
+  { "Label": "Exposed Redis instances", "Pattern": "\"redis\" \"{q}\"" },
+  { "Label": "Open MongoDB", "Pattern": "\"MongoDB\" \"{q}\"" },
+
+  { "Label": "Exposed CCTV streams", "Pattern": "inurl:video.cgi OR inurl:stream \"{q}\"" },
+  { "Label": "RTSP streams", "Pattern": "inurl:rtsp \"{q}\"" },
+
+  { "Label": "Credentials in public code", "Pattern": "\"apikey\" OR \"api_key\" site:github.com \"{q}\"" },
+  { "Label": "Hardcoded tokens", "Pattern": "\"token\" site:github.com \"{q}\"" },
+  { "Label": "Secrets in GitHub", "Pattern": "site:github.com \"BEGIN RSA PRIVATE KEY\" \"{q}\"" },
+
+  { "Label": "AWS keys exposed", "Pattern": "(AKIA|ASIA)[A-Z0-9]{16} site:github.com" },
+  { "Label": "Google API keys", "Pattern": "AIza[0-9A-Za-z\-_]{35} site:github.com" },
+
+  { "Label": "Public Jenkins", "Pattern": "inurl:jenkins \"{q}\"" },
+  { "Label": "Public GitLab", "Pattern": "inurl:gitlab \"{q}\"" },
+  { "Label": "Public phpMyAdmin", "Pattern": "inurl:phpmyadmin \"{q}\"" },
+
+  { "Label": "CVE / vulnerability reports", "Pattern": "\"CVE-\" \"{q}\"" },
+  { "Label": "Exploit-db entries", "Pattern": "site:exploit-db.com \"{q}\"" },
+
+  { "Label": "Company-specific docs", "Pattern": "site:company.com \"{q}\"" },
+  { "Label": "Internal docs on Google Drive", "Pattern": "site:drive.google.com \"internal\" \"{q}\"" },
+
+  { "Label": "Emails in text", "Pattern": "intext:\"@{q}\"" },
+  { "Label": "Phone numbers", "Pattern": "intext:\"+{q}\" OR intext:\"{q}\"" },
+
+  { "Label": "Breadcrumbs / sitemap", "Pattern": "inurl:sitemap OR filetype:xml \"{q}\"" },
+  { "Label": "RSS feeds", "Pattern": "inurl:feed OR filetype:rss \"{q}\"" },
+
+  { "Label": "Translations / localized files", "Pattern": "site:translate.googleusercontent.com \"{q}\"" },
+  { "Label": "Archived pages (Wayback)", "Pattern": "webcache.googleusercontent.com \"{q}\"" },
+
+  { "Label": "Mobile app package names", "Pattern": "inurl:play.google.com/store/apps/details \"{q}\"" },
+  { "Label": "APK files", "Pattern": "filetype:apk \"{q}\"" },
+
+  { "Label": "Regex-like token search", "Pattern": "\"{q}\" AROUND(3) \"{q2}\"" },
+  { "Label": "Phone repair schematics", "Pattern": "\"{model}\" schematic OR \"board view\"" },
+
+  { "Label": "Common default credentials", "Pattern": "\"admin\":\"admin\" OR \"root\":\"root\" \"{q}\"" },
+  { "Label": "Public calendar events", "Pattern": "site:calendar.google.com \"{q}\"" },
+
+  { "Label": "Machine-readable feeds", "Pattern": "filetype:json \"{q}\"" },
+  { "Label": "Public spreadsheets", "Pattern": "site:docs.google.com/spreadsheets \"{q}\"" }
+]
